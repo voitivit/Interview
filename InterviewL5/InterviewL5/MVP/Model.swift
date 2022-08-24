@@ -15,6 +15,9 @@ struct User: Decodable {
     let phone: String
     let website: String
     let company: Company?
+    var description: String {
+        return "№\(id). \(name) | \(username)"
+    }
 }
 
 struct Address: Decodable {
