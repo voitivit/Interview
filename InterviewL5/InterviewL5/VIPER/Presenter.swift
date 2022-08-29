@@ -32,7 +32,7 @@ class UserPresenter: AnyPresenter {
         case .success(let users):
             view?.upLoad(with: users)
         case .failure:
-            view?.upLoad(with: "Что-то пошло не так 🫣")
+            view?.upLoad(with: "Что-то пошло не так (ツ)")
         }
     }
     
